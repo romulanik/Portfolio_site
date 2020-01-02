@@ -1,22 +1,113 @@
-.App {
-  text-align: center;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0.5em;
+  border-bottom: 2px solid black;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #EE82EE;
 }
 
-.App-link {
-  color: #09d3ac;
+img {
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 290px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.contact > a {
+  color: white;
+  font-size: 1.35em;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.contact > a:hover {
+  background-color: lightgreen;
+}
+
+.header {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto min-content;
+      grid-template-rows: auto -webkit-min-content;
+      grid-template-rows: auto min-content;
+  padding: 5px;
+  border: 2px solid red;
+  background-color: #DDA0DD;
+}
+
+.header-items {
+  padding: 5px;
+  border: 2px solid pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid black;
+  font-size: 3em;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.header-items:nth-child(1) img {
+  border: 3px solid gray;
+  max-height: 100%;
+  min-height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.header-items:nth-child(1):hover img {
+  border: 3px solid gray;
+  max-height: 100%;
+  min-height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.header-items:nth-child(3) img {
+  width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,113 @@
+// My-var
+$bgcolor: #bce27f; // miętowy^^
+$textcolor: #cddad7;
+$violetMax_nav: #EE82EE;
+$mediumOrchid_header: #DDA0DD;
+
+// My-var
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.nav {
+    // width: 100%;
+    display: flex;
+    padding: 0.5em;
+    border-bottom: 2px solid black;
+    justify-content: space-between;
+    background-color: $violetMax_nav;
+}
+
+
+img {
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    width: 290px;
+    justify-content: space-between;;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+// IMPORTANT  //
+.contact > a {
+    color: white;
+    font-size: 1.35em;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.contact > a:hover {
+    background-color: lightgreen;
+}
+// IMPORTANT  //
+
+// nav //
+
+.header {
+    // width: 100vh;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto min-content;
+
+    padding: 5px;
+    border: 2px solid red;
+    background-color: $mediumOrchid_header;
+}
+
+.header-items  {
+    padding: 5px;
+    border: 2px solid pink;
+
+    display: flex; // test -> work perfect 
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    font-size: 3em;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+
+
+.header-items:nth-child(1) img { 
+    // padding: 0.2em;
+    // border-radius: 30px;
+    border: 3px solid gray;
+
+    max-height: 100%;
+    min-height: 100%;
+    object-fit: fill;
+}
+
+.header-items:nth-child(1):hover img { 
+    // padding: 0.2em;
+    // border-radius: 30px;
+    border: 3px solid gray;
+
+    max-height: 100%;
+    min-height: 100%;
+    object-fit: fill;
+}
+
+.header-items:nth-child(3) img { 
+    // border-radius: 25px;
+    width: 100%;
+    max-height:100%;
+    min-height: 100%;
+    object-fit: fill;
+    
+}
