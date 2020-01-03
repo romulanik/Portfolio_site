@@ -8,15 +8,18 @@ function App() {
   return (
     <body>
       <div class='nav'>
-        <img src={Logo}/>
-        <div id='contact'>
+        {/* P to remove */}
+          <p><img src={Logo}/></p>
+          <div id='contact'>
         </div>
       </div>
       <div id='header'>
-      
       </div>
       <div id='main'>
-{/* Do zrobienia */}
+        {/* Do zrobienia */}
+      </div>
+      <div id='footer'>
+        <h2>© Website designed by Piotr Kwiatkowski 2020</h2>
       </div>
     </body>
   );

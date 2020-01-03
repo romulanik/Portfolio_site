@@ -3,6 +3,11 @@
   margin: 0px;
 }
 
+p:nth-child(1) {
+  margin: 2px;
+  border: 2px solid black;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,7 +55,7 @@ img {
 }
 
 .contact > a:hover {
-  background-color: lightgreen;
+  background-color: #ff99ff;
 }
 
 .header {
@@ -109,5 +114,17 @@ h1 {
   min-height: 100%;
   -o-object-fit: fill;
      object-fit: fill;
+}
+
+#footer {
+  background-color: lightgray;
+  padding: 1em;
+  border: 2px solid white;
+}
+
+h2 {
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
 }
 /*# sourceMappingURL=App.css.map */

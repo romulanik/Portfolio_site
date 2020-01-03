@@ -12,6 +12,14 @@ $mediumOrchid_header: #DDA0DD;
     margin: 0px;
 }
 
+// test (na sztuke zrobione) //
+
+p:nth-child(1) {
+    margin: 2px;
+    border: 2px solid black;
+}
+
+// test (na sztuke zrobione) //
 
 .nav {
     // width: 100%;
@@ -23,17 +31,18 @@ $mediumOrchid_header: #DDA0DD;
 }
 
 
-img {
+img  {
     height: 48px;
     display: flex;
     justify-content: flex-end;
 }
 
+
 .contact {
     display: flex;
     flex-direction: row;
     width: 290px;
-    justify-content: space-between;;
+    justify-content: space-between;
     border: 2px solid black;
     padding: 5px;
 }
@@ -45,10 +54,11 @@ img {
     font-style: italic;
     font-weight: bold;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    // border: 1px solid black;
 }
 
 .contact > a:hover {
-    background-color: lightgreen;
+    background-color: rgb(255, 153, 255);
 }
 // IMPORTANT  //
 
@@ -83,7 +93,6 @@ h1 {
 }
 
 
-
 .header-items:nth-child(1) img { 
     // padding: 0.2em;
     // border-radius: 30px;
@@ -101,7 +110,7 @@ h1 {
 
     max-height: 100%;
     min-height: 100%;
-    object-fit: fill;
+    object-fit: fill; 
 }
 
 .header-items:nth-child(3) img { 
@@ -112,3 +121,17 @@ h1 {
     object-fit: fill;
     
 }
+
+// make as component  TESTING !ITS NOT REACT!//
+#footer {
+    background-color: lightgray;
+    padding: 1em;
+    border: 2px solid white; // for testing purpose 
+}
+
+h2 {
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+}
+// make as component  TESTING !ITS NOT REACT!//
