@@ -1,40 +1,43 @@
-// My-var
-$bgcolor: #bce27f; // miętowy^^
+//My-var-SCSS
+$bgcolor: #bce27f; // mientowy
 $textcolor: #cddad7;
 $violetMax_nav: #EE82EE;
 $mediumOrchid_header: #DDA0DD;
 
-// test ^  * delete * //
-// My-var
-
+//global-config
 * {
     padding: 0px;
     margin: 0px;
 }
 
-// test (na sztuke zrobione) //
-
-p:nth-child(1) {
-    margin: 2px;
-    border: 2px solid black;
+//main-divs
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: #9b59b6;
+   
 }
 
-// test (na sztuke zrobione) //
+.header {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto min-content;
+
+    padding: 5px;
+    border: 2px solid red;
+    background-color: $mediumOrchid_header;
+}
 
 .nav {
-    // width: 100%;
     display: flex;
     padding: 0.5em;
     border-bottom: 2px solid black;
     justify-content: space-between;
     background-color: $violetMax_nav;
-}
-
-
-img  {
-    height: 48px;
-    display: flex;
-    justify-content: flex-end;
+    //scrolling nav
+    // position: fixed;
+    // top: 0;
+    // width: 100%;
 }
 
 
@@ -43,7 +46,7 @@ img  {
     flex-direction: row;
     width: 290px;
     justify-content: space-between;
-    border: 2px solid black;
+    border: 2px dashed pink;
     padding: 5px;
 }
 
@@ -54,36 +57,66 @@ img  {
     font-style: italic;
     font-weight: bold;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    // border: 1px solid black;
 }
 
 .contact > a:hover {
     background-color: rgb(255, 153, 255);
 }
-// IMPORTANT  //
 
-// nav //
+.footer {
+    display: flex;
+    flex-direction: column;
 
-.header {
-    // width: 100vh;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: auto min-content;
+    background-color: white;
+    padding: 1em;
+    border: 2px solid blue; // for testing purpose 
+}
 
-    padding: 5px;
-    border: 2px solid red;
-    background-color: $mediumOrchid_header;
+
+//other
+.logo {
+    margin: 2px;
+    border: 2px dashed pink;
+}
+
+img  {
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .header-items  {
     padding: 5px;
     border: 2px solid pink;
 
-    display: flex; // test -> work perfect 
+    display: flex; //work perfect 
     justify-content: center;
     align-items: center;
     border: 2px solid black;
     font-size: 3em;
+}
+
+.header-items:nth-child(1) img { 
+    max-height: 100%;
+    min-height: 100%;
+    object-fit: fill;
+
+    border: 3px solid gray;
+}
+
+.header-items:nth-child(1):hover img { 
+    border: 3px solid gray;
+    max-height: 100%;
+    min-height: 100%;
+    object-fit: fill; 
+}
+
+.header-items:nth-child(3) img { 
+    width: 100%;
+    max-height:100%;
+    min-height: 100%;
+    object-fit: fill;
+    
 }
 
 h1 {
@@ -92,46 +125,15 @@ h1 {
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-
-.header-items:nth-child(1) img { 
-    // padding: 0.2em;
-    // border-radius: 30px;
-    border: 3px solid gray;
-
-    max-height: 100%;
-    min-height: 100%;
-    object-fit: fill;
+p:nth-child(1) {
+    text-align: center;
+    color: black;
 }
 
-.header-items:nth-child(1):hover img { 
-    // padding: 0.2em;
-    // border-radius: 30px;
-    border: 3px solid gray;
-
-    max-height: 100%;
-    min-height: 100%;
-    object-fit: fill; 
-}
-
-.header-items:nth-child(3) img { 
-    // border-radius: 25px;
-    width: 100%;
-    max-height:100%;
-    min-height: 100%;
-    object-fit: fill;
-    
-}
-
-// make as component  TESTING !ITS NOT REACT!//
-#footer {
-    background-color: lightgray;
-    padding: 1em;
-    border: 2px solid white; // for testing purpose 
-}
-
+// to work h2 ---> into p // 
 h2 {
     text-align: center;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
-// make as component  TESTING !ITS NOT REACT!//
+

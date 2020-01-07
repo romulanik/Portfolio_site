@@ -3,9 +3,27 @@
   margin: 0px;
 }
 
-p:nth-child(1) {
-  margin: 2px;
-  border: 2px solid black;
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #9b59b6;
+}
+
+.header {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto min-content;
+      grid-template-rows: auto -webkit-min-content;
+      grid-template-rows: auto min-content;
+  padding: 5px;
+  border: 2px solid red;
+  background-color: #DDA0DD;
 }
 
 .nav {
@@ -20,16 +38,6 @@ p:nth-child(1) {
   background-color: #EE82EE;
 }
 
-img {
-  height: 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,7 +50,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 2px solid black;
+  border: 2px dashed pink;
   padding: 5px;
 }
 
@@ -58,16 +66,32 @@ img {
   background-color: #ff99ff;
 }
 
-.header {
-  height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto min-content;
-      grid-template-rows: auto -webkit-min-content;
-      grid-template-rows: auto min-content;
-  padding: 5px;
-  border: 2px solid red;
-  background-color: #DDA0DD;
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  padding: 1em;
+  border: 2px solid blue;
+}
+
+.logo {
+  margin: 2px;
+  border: 2px dashed pink;
+}
+
+img {
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .header-items {
@@ -86,18 +110,12 @@ img {
   font-size: 3em;
 }
 
-h1 {
-  text-align: center;
-  color: white;
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-}
-
 .header-items:nth-child(1) img {
-  border: 3px solid gray;
   max-height: 100%;
   min-height: 100%;
   -o-object-fit: fill;
      object-fit: fill;
+  border: 3px solid gray;
 }
 
 .header-items:nth-child(1):hover img {
@@ -116,15 +134,20 @@ h1 {
      object-fit: fill;
 }
 
-#footer {
-  background-color: lightgray;
-  padding: 1em;
-  border: 2px solid white;
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+p:nth-child(1) {
+  text-align: center;
+  color: black;
 }
 
 h2 {
   text-align: center;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 /*# sourceMappingURL=App.css.map */
