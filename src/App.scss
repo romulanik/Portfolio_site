@@ -13,28 +13,29 @@ $mediumOrchid_header: #DDA0DD;
 //main-divs
 .main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    text-align: center;
-    height: 100vh;
+    flex-wrap: wrap;
+    // height: 100vh;
+    justify-content: center;
 
     background-color: #9b59b6;
     border: 3px solid yellow; // for testing
 }
 
-.photos {
+.main > img {
     border: 5px solid green; // for testing
-    display: flex;
-    align-items: center;
-    object-fit: fill;
-    height: 100vh;
-    margin: auto;
-    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .main > p {
-    border: 1px solid red; // for testing
     text-align: center;
+    font-size: 2em;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .header {
@@ -46,6 +47,12 @@ $mediumOrchid_header: #DDA0DD;
     background-color: $mediumOrchid_header;
 }
 
+//PROBLEM (nth child is temporal solution)//
+.header  img:nth-child(2) {
+    width: 100%;
+    height: 100%;
+}
+// PROBLEM//
 .nav {
     display: flex;
     flex-direction: row;
@@ -109,14 +116,6 @@ $mediumOrchid_header: #DDA0DD;
 .logo > img {
     height: 48px;
 }
-
-// Not working?? // 
-img  {
-    // height: 48px;
-    // display: flex;
-    // justify-content: flex-end;
-}
-// Not working?? // 
 
 .header-items  {
     padding: 5px;
