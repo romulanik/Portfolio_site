@@ -3,7 +3,7 @@ $bgcolor: #bce27f; // mientowy
 $textcolor: #cddad7;
 $violetMax_nav: #EE82EE;
 $mediumOrchid_header: #DDA0DD;
-
+// CLEAN CODE !!! // 
 //global-config
 * {
     padding: 0px;
@@ -14,15 +14,33 @@ $mediumOrchid_header: #DDA0DD;
 .main {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 100vh;
+
     background-color: #9b59b6;
-   
+    border: 3px solid yellow; // for testing
+}
+
+.photos {
+    border: 5px solid green; // for testing
+    display: flex;
+    align-items: center;
+    object-fit: fill;
+    height: 100vh;
+    margin: auto;
+    align-items: center;
+}
+
+.main > p {
+    border: 1px solid red; // for testing
+    text-align: center;
 }
 
 .header {
     height: 100vh;
     display: grid;
     grid-template-rows: auto min-content;
-
     padding: 5px;
     border: 2px solid red;
     background-color: $mediumOrchid_header;
@@ -30,16 +48,21 @@ $mediumOrchid_header: #DDA0DD;
 
 .nav {
     display: flex;
+    flex-direction: row;
     padding: 0.5em;
     border-bottom: 2px solid black;
     justify-content: space-between;
     background-color: $violetMax_nav;
     //scrolling nav
     // position: fixed;
-    // top: 0;
+    // top: -200px;
     // width: 100%;
 }
 
+.nav img {
+    border: 2px solid red;
+    height: 48px;
+}
 
 .contact {
     display: flex;
@@ -48,6 +71,11 @@ $mediumOrchid_header: #DDA0DD;
     justify-content: space-between;
     border: 2px dashed pink;
     padding: 5px;
+}
+
+.contact > img {
+    height: 48px;
+    border: 2px solid red;
 }
 
 // IMPORTANT  //
@@ -68,7 +96,7 @@ $mediumOrchid_header: #DDA0DD;
     flex-direction: column;
 
     background-color: white;
-    padding: 1em;
+    padding: 1.5em;
     border: 2px solid blue; // for testing purpose 
 }
 
@@ -78,12 +106,17 @@ $mediumOrchid_header: #DDA0DD;
     margin: 2px;
     border: 2px dashed pink;
 }
-
-img  {
+.logo > img {
     height: 48px;
-    display: flex;
-    justify-content: flex-end;
 }
+
+// Not working?? // 
+img  {
+    // height: 48px;
+    // display: flex;
+    // justify-content: flex-end;
+}
+// Not working?? // 
 
 .header-items  {
     padding: 5px;

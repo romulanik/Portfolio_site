@@ -7,7 +7,9 @@ function Nav() {
     return (
       
         <div class='nav'>
-          <div class='logo'><img src={Logo}/></div>
+          <div class='logo'>
+            <img src={Logo}/>
+          </div>
             <div class='contact'>
               <a href="https://github.com/romulanik?tab=repositories"><img src={Git}/> </a>
               <a href="https://www.facebook.com/piotr.kwiatkowski.96780671"><img src={Fb}/></a>
