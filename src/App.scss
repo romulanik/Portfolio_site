@@ -18,15 +18,15 @@ $mediumOrchid_header: #DDA0DD;
     flex-wrap: wrap;
     // height: 100vh;
     justify-content: center;
-
+    padding: 10px;
+    align-items: center;
     background-color: #9b59b6;
-    border: 3px solid yellow; // for testing
 }
 
 .main > img {
-    border: 5px solid green; // for testing
-    height: 100%;
+    height: 50%;
     width: 100%;
+    padding: 10px;
 }
 
 .main > p {
@@ -36,38 +36,45 @@ $mediumOrchid_header: #DDA0DD;
     font-style: italic;
     font-weight: bold;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 1px solid black;
+    width: 100%;
+    padding: 6px;
+    margin: 10px;
 }
 
 .header {
     height: 100vh;
     display: grid;
     grid-template-rows: auto min-content;
-    padding: 5px;
-    border: 2px solid red;
+    padding: 10px;
+    padding-top: 77px;
+
     background-color: $mediumOrchid_header;
+    
 }
 
-//PROBLEM (nth child is temporal solution)//
+//PROBLEM (nth child is temporal solution, this is Schrödinger cat)//
 .header  img:nth-child(2) {
     width: 100%;
     height: 100%;
 }
+
 // PROBLEM//
 .nav {
     display: flex;
     flex-direction: row;
     padding: 0.5em;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
     justify-content: space-between;
     background-color: $violetMax_nav;
     //scrolling nav
-    // position: fixed;
-    // top: -200px;
-    // width: 100%;
+    position: fixed;
+    width: 100%;
+    transition: 0.5s; // for js soon
+    overflow: auto;
 }
 
 .nav img {
-    border: 2px solid red;
     height: 48px;
 }
 
@@ -104,7 +111,6 @@ $mediumOrchid_header: #DDA0DD;
 
     background-color: white;
     padding: 1.5em;
-    border: 2px solid blue; // for testing purpose 
 }
 
 
@@ -118,14 +124,16 @@ $mediumOrchid_header: #DDA0DD;
 }
 
 .header-items  {
-    padding: 5px;
-    border: 2px solid pink;
+    padding: 10px;
 
-    display: flex; //work perfect 
+    display: flex; 
     justify-content: center;
-    align-items: center;
+    align-items: center
+}
+
+.header-items:nth-child(2)  {
     border: 2px solid black;
-    font-size: 3em;
+    margin: 10px;
 }
 
 .header-items:nth-child(1) img { 
@@ -133,11 +141,10 @@ $mediumOrchid_header: #DDA0DD;
     min-height: 100%;
     object-fit: fill;
 
-    border: 3px solid gray;
+    border: 2px solid black;
 }
 
 .header-items:nth-child(1):hover img { 
-    border: 3px solid gray;
     max-height: 100%;
     min-height: 100%;
     object-fit: fill; 
@@ -154,7 +161,7 @@ $mediumOrchid_header: #DDA0DD;
 h1 {
     text-align: center;
     color: white;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 p:nth-child(1) {

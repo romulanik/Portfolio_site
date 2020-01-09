@@ -8,11 +8,11 @@ function Main() {
     return (
       <div class='main'>
          <img src={React_logo}></img>
-          <p>React</p>
+          <p>I use React</p>
          <img src={Html_css_logo}></img>
-          <p>Html and Css</p>
+          <p>Html and Css is my passion </p>
          <img src={Test_image}></img>
-          <p>Bootstrap</p>
+          <p>I like Bootstrap</p>
       </div>
     );
   }
