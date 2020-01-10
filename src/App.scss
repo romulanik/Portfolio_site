@@ -12,34 +12,37 @@ $mediumOrchid_header: #DDA0DD;
 
 //main-divs
 .main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    // height: 100vh;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 8px;
+    height: 100vh;
     padding: 10px;
     align-items: center;
     background-color: #9b59b6;
+    box-shadow: inset 0 0 2em black;
+
+    // border: 3px solid yellow; // for testing purposes
 }
 
 .main > img {
-    height: 50%;
+    margin: 0 auto;
     width: 100%;
-    padding: 10px;
+    height: 100%;
+    
+    border: 1px solid black; // for test purposes
 }
 
 .main > p {
+    margin: 0 auto;
     text-align: center;
     font-size: 2em;
     color: white;
     font-style: italic;
     font-weight: bold;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    border: 1px solid black;
+    border: 1px solid black; // for test purposes
     width: 100%;
-    padding: 6px;
-    margin: 10px;
+    height: 100%;
 }
 
 .header {
