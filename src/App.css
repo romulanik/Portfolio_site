@@ -11,32 +11,29 @@
   background-image: url("https://motionarray.imgix.net/preview-5024506HpRAQoWc_0014.jpg");
   -webkit-animation: smoke 199s linear infinite;
           animation: smoke 199s linear infinite;
+  border: 1px solid black;
 }
 
 .main {
+  padding: 10px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
   grid-gap: 8px;
   height: 100vh;
-  padding: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
   background-color: #9b59b6;
   border: 1px solid black;
 }
 
 .main > img {
   margin: 0 auto;
-  width: auto;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
-  min-height: 100%;
-  min-width: 100%;
-  border: 1px solid black;
+  height: 100%;
+  width: 100%;
+  border: 2px solid black;
 }
 
 .main > p {
@@ -66,6 +63,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 12px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -77,9 +75,18 @@
   background-color: rgba(255, 255, 255, 0.5);
   position: fixed;
   width: 100%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  overflow: auto;
+}
+
+.nav.scr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: rgba(0, 255, 34, 0.5);
 }
 
 .nav img {
@@ -126,7 +133,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: white;
+  background-color: whitesmoke;
   padding: 1.5em;
 }
 
@@ -153,7 +160,7 @@
 }
 
 .header-items:nth-child(2) {
-  border: 2px solid black;
+  border: 1px solid black;
   margin: 10px;
 }
 
@@ -163,21 +170,6 @@
   -o-object-fit: fill;
      object-fit: fill;
   border: 2px solid black;
-}
-
-.header-items:nth-child(1):hover img {
-  max-height: 100%;
-  min-height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
-.header-items:nth-child(3) img {
-  width: 100%;
-  max-height: 100%;
-  min-height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
 }
 
 h1 {
@@ -212,6 +204,12 @@ h2 {
   }
   100% {
     background-position: -2122px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=App.css.map */

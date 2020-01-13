@@ -2,7 +2,6 @@ import React from 'react';
 import Fb from '../images/fb.png';
 import Git from '../images/git.png';
 import Logo from '../images/logo.png';
-import Scroll from '../functions/scroll.js';
 
 function Nav() {
     return (

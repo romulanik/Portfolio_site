@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Scroll from './functions/scroll.js';
 
 function App() {
   return (
