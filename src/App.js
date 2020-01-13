@@ -4,7 +4,6 @@ import './App.css';
 function App() {
   return (
     <body>
-
       <div id='nav'>
       </div>
       <div id='contact'>
@@ -15,7 +14,6 @@ function App() {
       </div>
       <div id='footer'> 
       </div>
-      
     </body>
   );
 }

@@ -7,7 +7,17 @@ $mediumOrchid_header: #DDA0DD;
 //global-config
 * {
     padding: 0px;
-    margin: 0px;
+    margin: 0px;   
+    font-family: "Calibri", "Arial", "Helvetica", sans-serif;
+}
+
+.smoke {
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+    background-image:  url("https://motionarray.imgix.net/preview-5024506HpRAQoWc_0014.jpg");
+
+    animation: smoke 199s linear infinite;
 }
 
 //main-divs
@@ -19,16 +29,20 @@ $mediumOrchid_header: #DDA0DD;
     padding: 10px;
     align-items: center;
     background-color: #9b59b6;
-    box-shadow: inset 0 0 2em black;
 
-    // border: 3px solid yellow; // for testing purposes
+    border: 1px solid black;
 }
 
 .main > img {
     margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    
+    // testing // 
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    // testing //
     border: 1px solid black; // for test purposes
 }
 
@@ -40,9 +54,6 @@ $mediumOrchid_header: #DDA0DD;
     font-style: italic;
     font-weight: bold;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    border: 1px solid black; // for test purposes
-    width: 100%;
-    height: 100%;
 }
 
 .header {
@@ -51,25 +62,17 @@ $mediumOrchid_header: #DDA0DD;
     grid-template-rows: auto min-content;
     padding: 10px;
     padding-top: 77px;
+    border: 1px solid black;
+    background-color: lightpink;
 
-    background-color: $mediumOrchid_header;
-    
 }
 
-//PROBLEM (nth child is temporal solution, this is Schrödinger cat)//
-.header  img:nth-child(2) {
-    width: 100%;
-    height: 100%;
-}
-
-// PROBLEM//
 .nav {
     display: flex;
     flex-direction: row;
-    padding: 0.5em;
     border-bottom: 1px solid black;
     justify-content: space-between;
-    background-color: $violetMax_nav;
+    background-color: rgba(255,255,255,0.5);
     //scrolling nav
     position: fixed;
     width: 100%;
@@ -86,7 +89,6 @@ $mediumOrchid_header: #DDA0DD;
     flex-direction: row;
     width: 290px;
     justify-content: space-between;
-    border: 2px dashed pink;
     padding: 5px;
 }
 
@@ -120,8 +122,9 @@ $mediumOrchid_header: #DDA0DD;
 //other
 .logo {
     margin: 2px;
-    border: 2px dashed pink;
+    padding: 2px;
 }
+
 .logo > img {
     height: 48px;
 }
@@ -177,5 +180,14 @@ h2 {
     text-align: center;
     color: white;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+@keyframes smoke {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -2122px 0;
+    }
 }
 
